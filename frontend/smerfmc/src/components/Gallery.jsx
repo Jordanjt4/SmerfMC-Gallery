@@ -13,6 +13,7 @@ function Gallery({description, images}) {
                             <img className="image" src={i.url} />
                         </div>
                         <div className="caption-outer-frame">
+                            {/* if no set caption, place a new line to maintain visual flow */}
                             {i.caption === null ? <p className="caption"><br /></p> : <p className="caption">{i.caption}</p>}
                         </div>
                     </div>

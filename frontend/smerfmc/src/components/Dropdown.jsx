@@ -16,7 +16,7 @@ function Dropdown({categories, selected, setSelected}) {
               <span>{selected || "Select a category"}</span>
               <i className="fa fa-chevron-left"></i>
           </div>
-
+          
           {open && (
               <ul className="dropdown-menu">
                   {categories.map(c => (
